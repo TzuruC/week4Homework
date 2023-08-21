@@ -1,0 +1,168 @@
+// pc
+@media screen and (min-width: 992px){
+
+}
+
+// tablet
+@media (max-width: 991px) and (min-width: 769px){    
+    .container{
+        margin: 0 36px;
+    }
+
+// HEADER
+    nav{
+        padding: 16px 0;
+    }
+    .banner{
+        background-image: $home-header-sm;
+    }
+    .banner .banner-slogan{
+        width: 100%;
+        padding: 296px 0;    
+    }
+
+// FOOTER
+    footer{
+        padding-top: 56px;
+        .container{
+            padding: 0;
+        }
+        .menu a{
+            font-size: 16px;
+            line-height: 24px;
+        }
+    }
+    .sub-nav.flex{
+        margin-bottom: 24px;
+    }
+    .socialmedia img{
+        width: 40px;
+        margin-left: 16px;
+    }
+    .contact-info li.flex{
+        margin-bottom: 8px;
+    }
+    .copyright.flex{
+        padding: 32px 0 40px;
+    }
+}
+
+// phone
+@media (max-width: 768px){ 
+    .container{
+        padding: 0 14px 0 13px;
+    }
+// HEADER
+    nav{
+        padding-bottom: 0;
+    }   
+    nav .container.flex{
+        width: 100%;  
+        margin: 0;
+        padding: 0;      
+        flex-direction: column;
+        flex-wrap: wrap;
+        .logo{
+            margin: 0 auto 36px 0;
+            padding: 0 15px;
+        }
+    }
+    .menu.flex{
+        width: 100%;
+        flex-wrap: wrap;
+        li{
+            width: 50%;
+        }
+        a{
+            padding: 12px 62px;
+            font-size: 16px;
+            line-height: 24px;
+            display: block;
+            border: 1px solid #fff;
+            text-align: center;
+        }
+    }
+    .banner{
+        background-image: $home-header-sm;
+    }
+    .banner .banner-slogan{
+        width: 100%;
+        padding: 144px 0;
+        p{
+            font-size: 16px;
+            line-height: 24px;
+        }
+        h4{
+            margin-bottom: 8px;
+            font-size: 24px;
+            line-height: 36px;
+        }
+    }
+
+// FOOTER
+    footer{
+        padding-top: 24px;
+        
+    }
+    footer .container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: start;
+        .sub-nav{
+            // width: 30%;
+            order: 2;
+            .socialmedia{
+                margin-left: auto;
+            }
+        }
+        .contact-info{
+            // width: 70%;
+            order: 1;
+        }
+        .copyright{
+            width: 100%;
+            order: 3;
+        }
+    }
+    .sub-menu{
+        display: none;
+    }
+    .socialmedia img{
+        width: 24px;
+        margin-left: 8px;
+    }
+    .sub-nav.flex{
+        margin-bottom: 0;
+    }
+    .contact-info li.flex{
+        font-size: 16px;
+        line-height: 24px;
+        span{
+            margin-right: 11px;
+            font-size: 18px;
+            line-height: 18px;
+        }
+        &:last-child{
+            margin-bottom: 24px;
+        }
+    }
+    .copyright-rext{
+        margin-bottom: 8px;
+    }
+    .copyright.flex{
+        padding: 16px 0;
+        display: block;
+        ul.flex{
+            display: block;
+            a{
+                margin: 0;
+                margin-bottom: 8px;
+                font-size: 16px;
+                line-height: 24px;
+            }
+        }
+    }
+    
+
+}
