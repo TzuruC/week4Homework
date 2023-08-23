@@ -30,3 +30,66 @@ nav{
 .service-card{
     width: 306px;
 }
+
+// tablet
+@media (max-width: 991px) and (min-width: 769px){
+    nav{
+        padding: 16px 0;
+    }
+    .banner{
+        background-image: $home-header-sm;
+    }
+    .banner .banner-slogan{
+        width: 100%;
+        padding: 296px 0;    
+    }
+}
+
+// phone
+@media (max-width: 768px){ 
+    nav{
+        padding-bottom: 0;
+    }   
+    nav .container.flex{
+        width: 100%;  
+        margin: 0;
+        padding: 0;      
+        flex-direction: column;
+        flex-wrap: wrap;
+        .logo{
+            margin: 0 auto 36px 0;
+            padding: 0 15px;
+        }
+    }
+    .menu.flex{
+        width: 100%;
+        flex-wrap: wrap;
+        li{
+            width: 50%;
+        }
+        a{
+            padding: 12px 62px;
+            font-size: 16px;
+            line-height: 24px;
+            display: block;
+            border: 1px solid #fff;
+            text-align: center;
+        }
+    }
+    .banner{
+        background-image: $home-header-sm;
+    }
+    .banner .banner-slogan{
+        width: 100%;
+        padding: 144px 0;
+        p{
+            font-size: 16px;
+            line-height: 24px;
+        }
+        h4{
+            margin-bottom: 8px;
+            font-size: 24px;
+            line-height: 36px;
+        }
+    }
+}

@@ -45,12 +45,12 @@ main h3{
     display: block;
 }
 
-.service{
+.service{    
+    padding: 80px 0;
     background: $color-light;
 }
 .service .container{
     margin: 0 auto;
-    padding: 80px 0;
     text-align: center;
     h3{
         margin-bottom: 32px;               
@@ -100,7 +100,7 @@ main h3{
 }
 
 .onsale{    
-    height: 608px;
+    // height: 608px;
     padding: 80px 0;
     background-image: $onsale-bg;
     background-position: center;
@@ -240,4 +240,146 @@ main h3{
         }
     }
     
+}
+
+
+
+// tablet
+@media (max-width: 991px) and (min-width: 769px){
+    .service,
+    .onsale,
+    .feedback{
+        padding: 80px 0 56px;
+    }
+    .service-card-group.flex{
+        flex-wrap: wrap;
+        justify-content: space-evenly;        
+        .service-card{
+            width: 336px;          
+            margin-bottom: 24px;
+        }
+    }
+    .products .products-card-group.flex{
+        flex-direction: column;
+        align-items: center;
+        .products-card{
+            width: 336px;
+            margin-bottom: 24px;
+        }
+    }
+    .onsale{
+        height: auto;
+        background-image: $index-bg-sm;
+    }
+    .onsale-card-group.flex{
+        flex-direction: column;
+        align-items: center;
+        .onsale-sale{
+            width: 696px;
+            margin-bottom: 24px;
+        }
+    }
+    .feedback .feedback-card-group.flex{
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        .feedback-card{
+            width: 336px;
+            height: 511px;
+            margin-bottom: 24px;
+        }
+    }
+    .feedback-card img{
+        width: 336px;
+        height: 306px;
+    }
+    
+}
+
+// phone
+@media (max-width: 768px){ 
+    
+    .service,
+    .products,
+    .onsale,
+    .feedback{
+        padding: 40px 0 16px;
+    }
+    .service-card,
+    .products-card,
+    .onsale-sale,
+    .feedback-card{
+        margin-bottom: 24px;
+    }
+    .banner{
+        height: 396px;
+        background-image: $banner-bg-sm;
+    }
+    .banner .flex{        
+        height: 396px;
+    }
+    .banner .banner-slogan{
+        width: 100%;
+        p{
+            font-size: 16px;
+            line-height: 24px;
+        }
+        h4{
+            margin-bottom: 4px;
+            font-size: 24px;
+            line-height: 36px;
+        }
+    }
+    .service .container h3,
+    .products h3,
+    .onsale h3,
+    .feedback h3,
+    .contact h3{
+        margin-bottom: 24px;
+        font-size: 24px;
+        line-height: 36px;
+    }
+    .service-card-group.flex,
+    .products .products-card-group.flex,
+    .onsale-card-group.flex,
+    .feedback-card-group.flex{
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;        
+    }
+    .service-card,
+    .feedback .feedback-card,
+    .products .products-card,
+    .onsale-sale{
+        width: 348px;
+    }
+    .onsale{
+        // height: 840px;
+        background-image: $index-bg-sm;
+        background-size: cover;
+    }
+    .feedback-card img{
+        width: 348px;
+        height: 306px;
+    }    
+    .contact{
+        padding: 40px 0;
+    }
+    .contact p{
+        width: inherit;
+    }
+    .contact form,
+    .contact button{
+        width: 100%;
+    }
+    .contact button{
+        margin-top: 24px;
+        margin-bottom: 0;
+        padding: 16px 142px;
+    }
+    .contact label.check, 
+    .contact input.check{
+        margin-bottom: 0;
+        vertical-align: baseline;
+        display: inline;
+    }
 }
